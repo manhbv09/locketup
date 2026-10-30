@@ -159,6 +159,9 @@ if (ua.includes("Locket")) {
                 "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
             ]
         }),
+        allows_filters: true,
+        filter_enabled: true,
+        ar_enabled: true,
         camera_roll_preview_enabled: "true",
         camera_roll_video_enabled: "true",
         camera_roll_video_upload_enabled: "true",
