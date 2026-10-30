@@ -58,7 +58,7 @@ if (ua.includes("Locket")) {
                 {
                     title: "GOLD✨",
                     body: "MANH BUI ĐÃ MỞ KHÓA TÍNH NĂNG GOLD TRÊN THIẾT BỊ CỦA BẠN💛",
-                    imageURL: "https://i.ibb.co/k2gRjqLv/68-AA9-B12-2339-4-CBF-BA6-A-A397-EC633-FF3.png"
+                    imageURL: "https://i.postimg.cc/nLN81T59/Ba-n-da-na-ng-ca-p-Locket-Gold-tha-nh-co-ng.png"
                 }
             ],
             primary_button_title: "Xong rồi nhé!",
