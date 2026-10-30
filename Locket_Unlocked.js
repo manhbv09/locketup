@@ -354,6 +354,7 @@ if (ua.includes("Locket")) {
             {
                 section: "🎨 General",
                 items: [
+                    {overlay_id: "caption:my_custom_tag",   source: "remote", caption: { background: { colors: ["#FF007F", "#7928CA"] }, icon: { data: "star.fill", type: "sf_symbol", color: "#FFD700" },  max_lines: 1,  text: "🚀 Code by Mạnh Bùi", text_color: "#FFFFFF",  type: "static_content"   } },
                     { overlay_id: "caption:standard", source: "local", caption: { type: "standard" } },
                     { overlay_id: "caption:link", source: "local", caption: { type: "link" } },
                     { overlay_id: "caption:review", source: "local", caption: { type: "review" } },
