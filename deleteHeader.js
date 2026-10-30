@@ -1,5 +1,11 @@
+/***********************************************
+> Delete RevenueCat ETag Header by nguyenhailong
+***********************************************/
 
-const version = 'V1.0.2';
+var headers = $request.headers;
 
+// Xóa bỏ ETag Header để ép ứng dụng tải lại dữ liệu tài khoản mới
+delete headers['X-RevenueCat-ETag'];
+delete headers['x-revenuecat-etag'];
 
-function setHeaderValue(e,a,d){var r=a.toLowerCase();r in e?e[r]=d:e[a]=d}var modifiedHeaders=$request.headers;setHeaderValue(modifiedHeaders,"X-RevenueCat-ETag",""),$done({headers:modifiedHeaders});
+$done({ headers: headers });
