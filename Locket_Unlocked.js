@@ -160,6 +160,8 @@ if (ua.includes("Locket")) {
         camera_roll_video_upload_enabled: "true",
         internal_camera_roll_video_upload_enabled: "true",
         longer_camera_roll_videos_enabled: "true",
+        camera_roll_max_duration: "180.0", 
+        video_max_duration: "180.0",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
@@ -247,6 +249,10 @@ if (ua.includes("Locket")) {
         rollcall_prompt_export_after_share: "true",
         rollcall_confirm_skip_tagging: "false",
         rollcall_tap_to_tag_enabled: "false",
+        chat_reactions_v2: "true",
+        voice_notes_in_chat: "true",            // Gửi tin nhắn thoại trong chat
+        audio_messages_enabled: "true",
+        unlimited_reactions: "true",
     });
 
     // ============================================================
@@ -354,7 +360,7 @@ if (ua.includes("Locket")) {
             {
                 section: "🎨 General",
                 items: [
-                    {overlay_id: "caption:my_custom_tag",   source: "remote", caption: { background: { colors: ["#FF007F", "#7928CA"] }, icon: { data: "star.fill", type: "sf_symbol", color: "#FFD700" },  max_lines: 1,  text: "🚀 Code by Mạnh Bùi", text_color: "#FFFFFF",  type: "static_content"   } },
+                    {overlay_id: "caption:my_custom_tag", source: "remote", caption: { background: { colors: ["#FF007F", "#7928CA"] }, icon: { data: "star.fill", type: "sf_symbol", color: "#FFD700" },  max_lines: 1,  text: "🚀 Code by Mạnh Bùi", text_color: "#FFFFFF",  type: "static_content"   } },
                     { overlay_id: "caption:standard", source: "local", caption: { type: "standard" } },
                     { overlay_id: "caption:link", source: "local", caption: { type: "link" } },
                     { overlay_id: "caption:review", source: "local", caption: { type: "review" } },
@@ -398,7 +404,7 @@ if (ua.includes("Locket")) {
             {
                 section: "🎨 Decorative MB",
                 items: [
-                    { overlay_id: "caption:manh_bui, source: "remote", caption: { background: { colors: ["#B8E7FF", "#A8F5D0", "#DCCBFF"] }, icon: { data: "tortoise.fill", type: "sf_symbol", color: "#183153" }, max_lines: 1, text: "Manh Bui", text_color: "#183153", type: "static_content" } },
+                    { overlay_id: "caption:manh_bui", source: "remote", caption: { background: { colors: ["#B8E7FF", "#A8F5D0", "#DCCBFF"] }, icon: { data: "tortoise.fill", type: "sf_symbol", color: "#183153" }, max_lines: 1, text: "Manh Bui", text_color: "#183153", type: "static_content" } },
                     { overlay_id: "caption:tuat", source: "remote", caption: { background: { colors: ["#2C1A0E", "#5D4037", "#D7A86E"] }, icon: { data: "🐕", type: "emoji" }, max_lines: 1, text: "Tuất", text_color: "#FFFFFFE6", type: "static_content" } },
                     { overlay_id: "caption:snake_vibes", source: "remote", caption: { background: { colors: ["#2E7D32", "#66BB6A"] }, icon: { data: "🐍", type: "emoji" }, max_lines: 1, text: "Snake Vibes", localized_text: { en: "Snake Vibes", vn: "Chất rắn" }, text_color: "#FFFFFFE6", type: "static_content" } },
                     { overlay_id: "caption:du_an_ma", source: "remote", caption: { background: { colors: ["#263238", "#455A64"] }, icon: { data: "👻", type: "emoji" }, max_lines: 1, text: "dự án ma", text_color: "#FFFFFFE6", type: "static_content" } },
