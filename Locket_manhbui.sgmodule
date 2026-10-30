@@ -14,4 +14,4 @@ locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.go
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://github.com/manhbv09/locketup/raw/refs/heads/main/deleteHeader.js, timeout=60
 
 # 3. Kích hoạt Gold & Ngày 29/12/2009
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/longcv2/mc/refs/heads/main/mc, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://github.com/manhbv09/locketup/raw/refs/heads/main/Locket_manhbui.js, requires-body=true, max-size=-1, timeout=60
