@@ -31,7 +31,7 @@ if (ua.includes("Locket")) {
             camera_filters: "enabled",
             face_filters: "enabled",
             ar_effects: "enabled",
-            camera_ar_filters: "enabled",
+            camera_ar_filters: "enabled"
         }),
         upsell_features: JSON.stringify({
             app_icon_picker: true,
@@ -159,16 +159,14 @@ if (ua.includes("Locket")) {
                 "lucky_face", "sweet_hearts", "elf_cutout", "santa_cutout", "frosty"
             ]
         }),
-        allows_filters: true,
-        filter_enabled: true,
-        ar_enabled: true,
+        allows_filters: "true",
+        filter_enabled: "true",
+        ar_enabled: "true",
         camera_roll_preview_enabled: "true",
         camera_roll_video_enabled: "true",
         camera_roll_video_upload_enabled: "true",
         internal_camera_roll_video_upload_enabled: "true",
         longer_camera_roll_videos_enabled: "true",
-        camera_roll_max_duration: "180.0", 
-        video_max_duration: "180.0",
         video_sound_enabled: "true",
         microphone_enabled: "true",
         camera_microphone_enabled: "true",
