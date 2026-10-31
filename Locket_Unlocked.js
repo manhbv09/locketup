@@ -310,6 +310,7 @@ if (ua.includes("Locket")) {
     });
     
     // ============================================================
+    //7. HỆ THỐNG, CACHE & STORAGE CDN
     // ============================================================
     Object.assign(obj.entries, {
         cdn_domain_replacements: JSON.stringify({ "firebasestorage.googleapis.com": "cdn.locketcamera.com" }),
