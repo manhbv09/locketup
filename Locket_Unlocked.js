@@ -310,17 +310,18 @@ if (ua.includes("Locket")) {
     });
     
     // ============================================================
+    // 7. CACHE, CDN & LƯU TRỮ ĐÁM MÂY (LƯU VĨNH VIỄN 10 NĂM)
     // ============================================================
     Object.assign(obj.entries, {
         cdn_domain_replacements: JSON.stringify({ "firebasestorage.googleapis.com": "cdn.locketcamera.com" }),
         cdn_domain_replacements_video: "true",
         storage_bucket: "gs://locket-img",
         storage_bucket_video: "gs://locket-video",
-        image_cache_max_age_sec: "157680000",
-        image_cache_max_size: "400000000",
-        history_cache_age_days: "1000",
-        user_cache_max_age_sec: "691200",
-        friends_cache_max_age_sec: "2592000",
+        image_cache_max_age_sec: "315360000",
+        image_cache_max_size: "999999999",
+        history_cache_age_days: "36500",
+        user_cache_max_age_sec: "315360000",
+        friends_cache_max_age_sec: "315360000",
         image_fetch_cache: "true",
         image_cache_use_shared: "true",
         use_doc_dir_for_image_cache: "true",
@@ -328,7 +329,7 @@ if (ua.includes("Locket")) {
         timestamp_based_history_fetches: "true",
         get_latest_moment_v2: "true",
         fetch_users_from_cloud_function: "true",
-        refresh_interval: "60",
+        refresh_interval: "315360000",
         firestore_refresh_v2: "true",
         firestore_refresh_v3: "true",
         keychain_access_retries: "true",
