@@ -8,6 +8,10 @@ var obj = JSON.parse($response.body);
 
 if (ua.includes("Locket")) {
     obj.Attention = "Chúc mừng bạn! Vui lòng không sử dụng chúng dưới mục đích thương mại!";
+    // ÉP LOCKET CẬP NHẬT NGAY LẬP TỨC MỖI LẦN MỞ APP (KHÔNG CẦN XÓA APP)
+    obj.state = "UPDATE";
+    obj.templateVersion = String(Math.floor(Date.now() / 1000));
+    
     obj.entries = obj.entries || {};
 
     // ============================================================
